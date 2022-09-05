@@ -1,0 +1,14 @@
+mvn clean install
+
+Chạy activeMQ.bat
+
+-- 1:1
+java -cp target/lab02-ActiveMQ-Queue--Topic-1.0-SNAPSHOT.jar com.queue.demo.Consumer Queue
+
+java -cp target/lab02-ActiveMQ-Queue--Topic-1.0-SNAPSHOT.jar com.queue.demo.Producer Queue
+
+
+-- 1:n
+java -cp target/lab02-ActiveMQ-Queue--Topic-1.0-SNAPSHOT.jar com.queue.demo.Consumer Topic
+
+java -cp target/lab02-ActiveMQ-Queue--Topic-1.0-SNAPSHOT.jar com.queue.demo.Producer Topic
